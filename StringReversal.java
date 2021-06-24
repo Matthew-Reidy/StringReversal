@@ -6,6 +6,7 @@ public class StringReverse {
 
 	public static void main(String[] args) 
 	{
+		
 		Stack<Character> s1 = new Stack<Character>();
 		
 		Scanner sc = new Scanner(System.in);
@@ -23,7 +24,7 @@ public class StringReverse {
 			s1.push(str.charAt(i));
 		}
 	
-		for ( int j = 0; j<s1.size(); j--)
+		while(s1.isEmpty() == false) 
 		{
 			System.out.print(s1.pop());
 		}
